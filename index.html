@@ -15,101 +15,100 @@
     </header>
 
     <main>
-        <>
-            <form name="contact" method="POST" data-netlify="true">
-                <p>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>
+                    Naam:
+                    <input type="text" name="Naam" placeholder="Uw naam" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Email:
+                    <input type="email" name="E-mail" placeholder="Uw e-mail" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Telefoon:
+                    <input type="tel" name="Telefoonnummer" placeholder="Uw telefoonnummer" maxlength="10" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Leeftijd:
+                    <input type="number" name="Leeftijd" placeholder="Uw leeftijd" maxlength="3" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Geboortedatum:
+                    <input type="date" name="Geboortedatum" placeholder="Uw geboortedatum" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Gender: <br />
+                    <input type="radio" id="man" name="Geslacht" value="Man" />
+                    Man <br />
+                    <input type="radio" id="vrouw" name="Geslacht" value="Vrouw" />
+                    Vrouw<br />
+                    <input type="radio" id="anders" name="Geslacht" value="Anders" />
+                    Anders<br />
+                </label>
+            </p>
+            <p>
+                <fieldset>
+                    <label>Favoriete quisine - </label>
                     <label>
-                        Naam:
-                        <input type="text" name="Naam" placeholder="Uw naam" />
+                        <input type="checkbox" name="Frans" value="Frans"> Frans
                     </label>
-                </p>
-                <p>
                     <label>
-                        Email:
-                        <input type="email" name="E-mail" placeholder="Uw e-mail" />
+                        <input type="checkbox" name="Spaans" value="Spaans"> Spaans
                     </label>
-                </p>
-                <p>
                     <label>
-                        Telefoon:
-                        <input type="tel" name="Telefoonnummer" placeholder="Uw telefoonnummer" maxlength="10" />
+                        <input type="checkbox" name="Italiaans" value="Italiaans"> Italiaans
                     </label>
-                </p>
-                <p>
                     <label>
-                        Leeftijd:
-                        <input type="number" name="Leeftijd" placeholder="Uw leeftijd" maxlength="3" />
+                        <input type="checkbox" name="Arabisch" value="Arabisch"> Arabisch
                     </label>
-                </p>
-                <p>
-                    <label>
-                        Geboortedatum:
-                        <input type="date" name="Geboortedatum" placeholder="Uw geboortedatum" />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Gender: <br />
-                        <input type="radio" id="man" name="Geslacht" value="Man" />
-                        Man <br />
-                        <input type="radio" id="vrouw" name="Geslacht" value="Vrouw" />
-                        Vrouw<br />
-                        <input type="radio" id="anders" name="Geslacht" value="Anders" />
-                        Anders<br />
-                    </label>
-                </p>
-                <p>
-                    <fieldset>
-                        <legend>Favoriete Cuisine</legend>
-                        <label>
-                            <input type="checkbox" name="Favoriete Cuisine" value="Frans"> Frans
-                        </label>
-                        <label>
-                            <input type="checkbox" name="Favoriete Cuisine" value="Spaans"> Spaans
-                        </label>
-                        <label>
-                            <input type="checkbox" name="Favoriete Cuisine" value="Italiaans"> Italiaans
-                        </label>
-                        <label>
-                            <input type="checkbox" name="Favoriete Cuisine" value="Arabisch"> Arabisch
-                        </label>
-                        </legend>
-                    </fieldset>
+                    </legend>
+                </fieldset>
 
 
-                    <p>
-                        <label>
-                            Wat is je favoriete schortkleur?<br />
-                            <input type="color" id="schort-kleur" name="schortkleur" />
-                        </label>
-                    </p>
+                <p>
+                    <label>
+                        Wat is je favoriete schortkleur?<br />
+                        <input type="color" id="schort-kleur" name="schortkleur" />
+                    </label>
+                </p>
 
-                    <p>
-                        <label>
-                            Biografie:
-                            <textarea class="form-textveld" name="Biografie" placeholder="Vertel iets meer over jezelf"
-                                rows="5" cols="20">
+                <p>
+                    <label>
+                        Biografie:
+                        <textarea class="form-textveld" name="Biografie" placeholder="Vertel iets meer over jezelf"
+                            rows="5" cols="20">
 							</textarea>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            Upload recept:
-                            <input type="file" />
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            Url naar je recepten website (url)
-                            <input type="url" class="form-textveld" name="Website URL" placeholder="URL Website" />
-                        </label>
-                    </p>
-                    <p>
-                        <button type="submit">Verstuur</button>
-                        <button type="reset">Reset</button>
-                    </p>
-            </form>
-            </div>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Upload recept:
+                        <input type="file" />
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Url naar je recepten website (url)
+                        <input type="url" class="form-textveld" name="Website URL" placeholder="URL Website" />
+                    </label>
+                </p>
+                <p>
+                    <button type="submit">Verstuur</button>
+                    <button type="reset">Reset</button>
+                </p>
+        </form>
+        </div>
     </main>
 </body>
 
