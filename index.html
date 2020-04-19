@@ -15,7 +15,7 @@
     </header>
 
     <main>
-        <div>
+        <>
             <form name="contact" method="POST" data-netlify="true">
                 <p>
                     <label>
@@ -61,57 +61,70 @@
                 <p>
                     <fieldset>
                         <legend>Favoriete Cuisine</legend>
-                        <div>
-                            <input type="checkbox" id="Frans" name="Favoriete Cuisine" value="Frans">
-                            <label for="Frans">Frans</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="Spaans" name="Favoriete Cuisine" value="Spaans">
-                            <label for="Spaans">Spaans</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="Italiaans" name="Favoriete Cuisine" value="Italiaans">
-                            <label for="Italiaans">Italiaans</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="Arabisch" name="Favoriete Cuisine" value="Arabisch">
-                            <label for="Arabisch">Arabisch</label>
-                        </div>
+                        <label>
+                            <input type="checkbox" name="Favoriete Cuisine" value="Frans"> Frans
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Favoriete Cuisine" value="Spaans"> Spaans
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Favoriete Cuisine" value="Italiaans"> Italiaans
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Favoriete Cuisine" value="Arabisch"> Arabisch
+                        </label>
                     </fieldset>
-                </p>
-                <p>
-                    <label>
-                        Wat is je favoriete schortkleur?<br />
-                        <input type="color" id="schort-kleur" name="schortkleur" />
-                    </label>
-                </p>
+                    </legend>
 
-                <p>
-                    <label>
-                        Biografie:
-                        <textarea class="form-textveld" name="Biografie" placeholder="Vertel iets meer over jezelf"
-                            rows="5" cols="20">
+                    <fieldset>
+                        <legend>Can you attend?</legend>
+                        <p>
+                            <label>
+                                <input type="radio" name="attendance" value="Attending"> Yes
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="radio" name="attendance" value="Not Attending"> No
+                            </label>
+                        </p>
+                    </fieldset>
+
+
+
+                    <p>
+                        <label>
+                            Wat is je favoriete schortkleur?<br />
+                            <input type="color" id="schort-kleur" name="schortkleur" />
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            Biografie:
+                            <textarea class="form-textveld" name="Biografie" placeholder="Vertel iets meer over jezelf"
+                                rows="5" cols="20">
 							</textarea>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Upload recept:
-                        <input type="file" />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Url naar je recepten website (url)
-                        <input type="url" class="form-textveld" name="Website URL" placeholder="URL Website" />
-                    </label>
-                </p>
-                <p>
-                    <button type="submit">Verstuur</button>
-                    <button type="reset">Reset</button>
-                </p>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Upload recept:
+                            <input type="file" />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Url naar je recepten website (url)
+                            <input type="url" class="form-textveld" name="Website URL" placeholder="URL Website" />
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">Verstuur</button>
+                        <button type="reset">Reset</button>
+                    </p>
             </form>
-        </div>
+            </div>
     </main>
 </body>
 
